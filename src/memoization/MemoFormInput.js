@@ -1,10 +1,11 @@
-import {useState} from "react";
-import {addConsoleDOM} from "./addConsoleDOM";
+import {memo, useState} from "react";
+import {MemoAddConsoleDOM} from "./MemoAddConsoleDOM";
 
-export default function FormInput() {
+function MemoFormInput() {
 
     const [input, setInput] = useState("");
-    addConsoleDOM(`formInput Component Rerender`);
+    MemoAddConsoleDOM(`MemoFormInput Component Rerender`);
+
 
     return (
         <div className="my-4 d-flex flex-row align-items-center justify-content-evenly">
@@ -14,3 +15,5 @@ export default function FormInput() {
         </div>
     );
 }
+
+export default memo(MemoFormInput);
