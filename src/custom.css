@@ -1,0 +1,20 @@
+.left-content {
+    --bs-border-radius: 8px 8px 0 0;
+    background-color: #FAF0E4;
+}
+
+.right-content {
+    --bs-border-radius: 0 0 8px 8px;
+    background-color: #FFD89C;
+}
+
+@media (min-width: 1200px) {
+    .left-content {
+        --bs-border-radius: 8px 0 0 8px;
+        --bs-border-opacity: 0;
+    }
+
+    .right-content {
+        --bs-border-radius: 0 8px 8px 0;
+    }
+}

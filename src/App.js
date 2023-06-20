@@ -1,10 +1,16 @@
-function App() {
-  return (
-    <div className="App">
+import './custom.css';
 
-      <h1 className="text-danger">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
-    </div>
-  );
+export default function App() {
+    return (
+        <div className="vh-100 w-100 row bg-warning p-5">
+            <div
+                className="left-content col-12 col-xl-4 p-2 p-xxl-3 rounded">
+
+            </div>
+            <div
+                className="right-content col-12 col-xl-8 p-2 p-xxl-3 rounded">
+
+            </div>
+        </div>
+    );
 }
-
-export default App;
