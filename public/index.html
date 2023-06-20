@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="#000000" name="theme-color"/>
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+            content="Web site created using create-react-app"
+            name="description"
     />
     <title>React Memoization Example</title>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="custom.css" rel="stylesheet">
+</head>
+<body class="vh-100 w-100 row m-0 bg-warning p-5 overflow-auto">
+
+<div class="left-content col-12 col-xl-4 p-2 p-xxl-3" id="root">
+
+</div>
+
+<div class="right-content col-12 col-xl-8 p-2 p-xxl-3 overflow-auto"
+     id='consoleDisplay'>
+    <button class="btn btn-secondary mb-2 d-block ms-auto" id="clearConsoleDiplay"><i
+            class="fa-solid fa-ban"></i>
+    </button>
+</div>
+</body>
 </html>

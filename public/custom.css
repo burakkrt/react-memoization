@@ -1,0 +1,14 @@
+.left-content {
+    background-color: #FAF0E4;
+}
+
+.right-content {
+    background-color: #FFD89C;
+}
+
+.comment {
+    background-color: #FAF0E4;
+    display: block;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+}

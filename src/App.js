@@ -1,16 +1,23 @@
-import './custom.css';
+import {addConsoleDOM} from "./addConsoleDOM";
+import {Fragment, useState} from "react";
+import FormInput from "./FormInput";
 
 export default function App() {
+
+    const [count, setCount] = useState(0);
+    addConsoleDOM("App Component Rerender", "red")
+
+    function incrementHandle() {
+        setCount(count => count + 1);
+    }
+
     return (
-        <div className="vh-100 w-100 row bg-warning p-5">
-            <div
-                className="left-content col-12 col-xl-4 p-2 p-xxl-3 rounded">
-
+        <Fragment>
+            <div className="d-flex justify-content-evenly align-items-center">
+                <span>Count = {count}</span>
+                <button className="btn btn-secondary" onClick={incrementHandle}>Increment</button>
             </div>
-            <div
-                className="right-content col-12 col-xl-8 p-2 p-xxl-3 rounded">
-
-            </div>
-        </div>
+            <FormInput/>
+        </Fragment>
     );
 }
